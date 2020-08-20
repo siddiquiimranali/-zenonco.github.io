@@ -555,6 +555,8 @@ a {
   font-size: 36px;
   letter-spacing: 0;
   text-shadow: 4.226px 9.063px 10px rgba(0, 0, 0, 0.05);
+  text-transform: capitalize;
+  padding-left: 1rem;
 }
 .filter-box {
   transition: transform 0.6s;
@@ -604,10 +606,15 @@ a {
   width: 124px;
   color: var(--secondary-clr);
   background: #fff;
-  border: 3px solid var(--secondary-clr);
+  border: 2px solid var(--secondary-clr);
   font-weight: 500;
   font-size: 18px;
   height: 45px;
+  transition: all 500ms ease;
+}
+.sec_stories .filter-stories:hover {
+  background: #0194da;
+  color: #fff;
 }
 .filter-container {
   display: none;
@@ -624,6 +631,9 @@ a {
   font-size: 24px;
   color: #084460;
 }
+.filter-tag {
+  padding-left: 1rem;
+}
 
 .filter-container .btn-close {
   border: 2px solid #999;
@@ -637,6 +647,10 @@ a {
   padding: 4px;
   cursor: pointer;
   margin-right: 10px;
+  transition: transform 0.3s;
+}
+.filter-container .btn-close:hover {
+  background: #f9f9f9;
 }
 .filter-container p {
   font-family: Poppins-SemiBold;
@@ -704,7 +718,7 @@ a {
   margin-bottom: 40px;
 }
 .st-card-filter .filter-fld {
-  font-size: 10px;
+  font-size: 11px;
   padding: 4px 10px;
 }
 .st-card-desc h5 {
