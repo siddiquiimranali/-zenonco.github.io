@@ -5,335 +5,397 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ZenOnco</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="css/main.css" />
   </head>
-  <body >
+  <body>
     <!-- header -->
     <header>
+      <div class="wrapper">
+        <nav class="navbar navbar-light">
+          <a class="navbar-brand" href="#">
+            <img src="images/logo1.png" alt="" />
+          </a>
+          <div class="ml-auto d-flex rt-nav">
+            <a href="tel:+919372976783">
+              <i class="fa fa-phone"></i>
+              +91 937 297 6783
+            </a>
+            <a href="#">
+              <i class="fa fa-envelope"></i>
+              care@zenonco.io
+            </a>
+            <form class="header-search">
+              <input class="fld-search" type="text" placeholder="search...." />
+              <button class="btn-search"><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+        </nav>
+      </div>
+      <div class="navigation">
         <div class="wrapper">
-          <nav class="navbar navbar-light">
-              <a class="navbar-brand" href="#">
-                <img src="images/logo.png" alt="">
-              </a>
-              <div class="ml-auto d-flex rt-nav">
-                  <a href="tel:+919372976783">
-                      <i class="fa fa-phone"></i>
-                      +91 937 297 6783
-                  </a>
-                  <a href="#">
-                      <i class="fa fa-envelope"></i>
-                      care@zenonco.io
-                  </a>
-                  <form class="header-search">
-                      <input class="fld-search" type="text" placeholder="search....">
-                      <button class="btn-search"><i class="fa fa-search"></i></button>
-                  </form>
-              </div>
-            </nav>
-        </div>  
-        <div class="navigation">
-          <div class="wrapper ">
-              <nav class="navbar navbar-expand-lg navbar-light main-menu ">
-              <button
-                  class="navbar-toggler ml-auto"
-                  type="button"
-                  data-toggle="collapse"
-                  data-target="#navbarSupportedContent"
-                  aria-controls="navbarSupportedContent"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation"
-              >
-                  <span class="navbar-toggler-icon"></span>
-              </button>
-  
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav ml-auto " >
-                  <li class="nav-item active">
-                      <a class="nav-link" href="index.html">
-                          Oncologist
-                      </a>
-                      <span class="sr-only">(current)</span></a
-                      >
-                  </li>
-                  <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="stories.html">Cancer Resources</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blogs,Stories & Evnets</a>
-                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <nav class="navbar navbar-expand-lg navbar-light main-menu">
+            <button
+              class="navbar-toggler ml-auto"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="index.html" dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">OUR SERVICES</a>
+                      <!--    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                           <a class="dropdown-item" href="#">Action</a>
                           <a class="dropdown-item" href="#">Another action</a>
                           <div class="dropdown-divider"></div>
                           <a class="dropdown-item" href="#">Something else here</a>
-                      </div>  
-                  </li>
-                  <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#">About Us</a>
-                  </li>
-                  <li class="nav-item ">
-                      <a class="nav-link " href="#">Contact Us</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#"><i class="fa fa-bars"></i></a>
-                  </li>
-                  </ul>
-              </div>
-              </nav>
-          </div>
-      </div>  
-      </header>
+                      </div> --> 
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="stories.html">SUCCESS STORIES</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">ABOUT CANCER</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">ABOUT US</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="fa fa-bars"></i></a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
     <section class="sec_stories py-5">
-        <div class="wrapper position-relative">
-            <div class="filter-box">
-                <h2>cancer healing stories</h2>
-                <button class="btnopn filter-stories ml-auto">
-                   <!---
+      <div class="wrapper position-relative">
+        <div class="filter-box">
+          <h2>cancer healing stories</h2>
+          <button class="btnopn filter-stories ml-auto">
+            <!---
                 <img src="images/icons/filter1.png" >
-                -->  
-                    <i class="fa fa-filter"></i>
-                    Filters</button>
-            </div>
-            <div class="filter-container">
-                <div class="d-flex mb-2 ">
-                    <h2>Filters</h2>
-                    <a class="btn-close ml-auto">
-                        <img src="images/icons/close-1.png" width="20px" height="20px" alt="">
-                    </a>
-                </div>
-                <div class="filter-tag mb-3">
-                    <p>Cancer Category</p>
-                    <a href="#" class="filter-fld tag-pink">breast cancer</a>
-                    <a href="#" class="filter-fld tag-blue">Cervical Cancer</a>
-                    <a href="#" class="filter-fld">Colorectal Cancer</a>
-                    <a href="#" class="filter-fld">Oral Cancer</a>
-                    <a href="#" class="filter-fld">Ovarian Cancer</a>
-                    <a href="#" class="filter-fld">Pancreatic Cancer</a>
-                    <a href="#" class="filter-fld">Head And Neck Cancer</a>
-                    <a href="#" class="filter-fld">breast cancer</a>
-                    <a href="#" class="filter-fld">Skin Cancer</a>
-                    <a href="#" class="filter-fld">Lung Cancer</a>
-                </div>            
-                <span class="splitter"></span>
-                <div class="filter-tag mt-3 mb-3">
-                    <p>Other Category</p>
-                    <a href="#" class="filter-fld tag-lgblue">Nutrition  Fitness</a>
-                    <a href="#" class="filter-fld ">Fitness</a>
-                    <a href="#" class="filter-fld">Emotional</a>
-                    <a href="#" class="filter-fld ">Nutrition  Fitness</a>
-                    <a href="#" class="filter-fld ">Fitness</a>
-                    <a href="#" class="filter-fld">Emotional</a>
-                </div>
-                  
-            </div>
-            
+                -->
+            <i class="fa fa-filter"></i>
+            Filters
+          </button>
         </div>
+        <div class="filter-container">
+          <div class="d-flex mb-2">
+            <h2>Filters</h2>
+            <a class="btn-close ml-auto">
+              <img
+                src="images/icons/close-1.png"
+                width="20px"
+                height="20px"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="filter-tag mb-3">
+            <p>Cancer Category</p>
+            <a href="#" class="filter-fld tag-pink">breast cancer</a>
+            <a href="#" class="filter-fld tag-blue">Cervical Cancer</a>
+            <a href="#" class="filter-fld">Colorectal Cancer</a>
+            <a href="#" class="filter-fld">Oral Cancer</a>
+            <a href="#" class="filter-fld">Ovarian Cancer</a>
+            <a href="#" class="filter-fld">Pancreatic Cancer</a>
+            <a href="#" class="filter-fld">Head And Neck Cancer</a>
+            <a href="#" class="filter-fld">breast cancer</a>
+            <a href="#" class="filter-fld">Skin Cancer</a>
+            <a href="#" class="filter-fld">Lung Cancer</a>
+          </div>
+          <span class="splitter"></span>
+          <div class="filter-tag mt-3 mb-3">
+            <p>Other Category</p>
+            <a href="#" class="filter-fld tag-lgblue">Nutrition Fitness</a>
+            <a href="#" class="filter-fld">Fitness</a>
+            <a href="#" class="filter-fld">Emotional</a>
+            <a href="#" class="filter-fld">Nutrition Fitness</a>
+            <a href="#" class="filter-fld">Fitness</a>
+            <a href="#" class="filter-fld">Emotional</a>
+          </div>
+        </div>
+      </div>
     </section>
-    
+
     <section class="wrapper storires-cards">
-        <div class="row">
-            <div class="col-sm-6 col-lg-4 col-xl-3 story-card">
-                <div class="st-card-img"><img src="images/story-profile.png" alt=""></div>
-                <div class="st-card-filter">
-                    <a href="#" class="filter-fld tag-blue">Cervical Cancer</a>
-                    <a href="#" class="filter-fld">Stomach Cancer</a>
-                </div>
-                <div class="st-card-desc">
-                    <h5>Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit, sed do eiusmod </h5>
-                    <p>At first, everyone thought it to be tetanus. The pain was so severe that I could not move.
-                         So, I got admitted to the hospital.Primarily, my diagnosis
-                    <span class="morebtn">. . . Read more</span>
-                    </p>
-                </div>
-            
-            </div>
-            <div class="col-sm-6 col-lg-4 col-xl-3 story-card">
-                <div class="st-card-img"><img src="images/story-profile.png" alt=""></div>
-                <div class="st-card-filter">
-                    <a href="#" class="filter-fld tag-orange">Cervical Cancer</a>
-                    <a href="#" class="filter-fld">Stomach Cancer</a>
-                </div>
-                <div class="st-card-desc">
-                    <h5>Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit, sed do eiusmod </h5>
-                        <p>At first, everyone thought it to be tetanus. The pain was so severe that I could not move.
-                            So, I got admitted to the hospital.Primarily, my diagnosis
-                       <span class="morebtn">. . . Read more</span>
-                       </p>
-                </div>
-            
-            </div>
-            <div class="col-sm-6 col-lg-4 col-xl-3 story-card">
-                <div class="st-card-img"><img src="images/story-profile.png" alt=""></div>
-                <div class="st-card-filter">
-                    <a href="#" class="filter-fld tag-purple">Cervical Cancer</a>
-                    <a href="#" class="filter-fld">Stomach Cancer</a>
-                </div>
-                <div class="st-card-desc">
-                    <h5>Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit, sed do eiusmod </h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit, sed do eiusmod 
-                    <span class="dots"> . . .</span>
-                    <span class="more">Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit, sed do eiusmod </span><span class="morebtn">Read more</span>
-                    </p>
-                </div>
-            
-            </div>
-            <div class="col-sm-6 col-lg-4 col-xl-3  story-card">
-                <div class="st-card-img"><img src="images/story-profile.png" alt=""></div>
-                <div class="st-card-filter">
-                    <a href="#" class="filter-fld ">Cervical Cancer</a>
-                    <a href="#" class="filter-fld">Stomach Cancer</a>
-                </div>
-                <div class="st-card-desc">
-                    <h5>Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit, sed do eiusmod </h5>
-                        <p>At first, everyone thought it to be tetanus. The pain was so severe that I could not move.
-                            So, I got admitted to the hospital.Primarily, my diagnosis
-                       <span class="morebtn">. . . Read more</span>
-                       </p>
-                </div>
-            
-            </div>
-            <div class="col-sm-6 col-lg-4 col-xl-3  story-card">
-                <div class="st-card-img"><img src="images/story-profile.png" alt=""></div>
-                <div class="st-card-filter">
-                    <a href="#" class="filter-fld tag-blue">Cervical Cancer</a>
-                    <a href="#" class="filter-fld">Stomach Cancer</a>
-                </div>
-                <div class="st-card-desc">
-                    <h5>Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit, sed do eiusmod </h5>
-                        <p>At first, everyone thought it to be tetanus. The pain was so severe that I could not move.
-                            So, I got admitted to the hospital.Primarily, my diagnosis
-                       <span class="morebtn">. . . Read more</span>
-                       </p>
-                </div>
-            
-            </div>
-            <div class="col-sm-6 col-lg-4 col-xl-3  story-card">
-                <div class="st-card-img"><img src="images/story-profile.png" alt=""></div>
-                <div class="st-card-filter">
-                    <a href="#" class="filter-fld tag-orange">Cervical Cancer</a>
-                    <a href="#" class="filter-fld">Stomach Cancer</a>
-                </div>
-                <div class="st-card-desc">
-                    <h5>Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit, sed do eiusmod </h5>
-                        <p>At first, everyone thought it to be tetanus. The pain was so severe that I could not move.
-                            So, I got admitted to the hospital.Primarily, my diagnosis
-                       <span class="morebtn">. . . Read more</span>
-                       </p>
-                </div>
-            
-            </div>
-            <div class="col-sm-6 col-lg-4 col-xl-3  story-card">
-                <div class="st-card-img"><img src="images/story-profile.png" alt=""></div>
-                <div class="st-card-filter">
-                    <a href="#" class="filter-fld tag-purple">Cervical Cancer</a>
-                    <a href="#" class="filter-fld">Stomach Cancer</a>
-                </div>
-                <div class="st-card-desc">
-                    <h5>Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit, sed do eiusmod </h5>
-                        <p>At first, everyone thought it to be tetanus. The pain was so severe that I could not move.
-                            So, I got admitted to the hospital.Primarily, my diagnosis
-                       <span class="morebtn">. . . Read more</span>
-                       </p>
-                </div>
-            
-            </div>
-            <div class="col-sm-6 col-lg-4 col-xl-3  story-card">
-                <div class="st-card-img"><img src="images/story-profile.png" alt=""></div>
-                <div class="st-card-filter">
-                    <a href="#" class="filter-fld ">Cervical Cancer</a>
-                    <a href="#" class="filter-fld">Stomach Cancer</a>
-                </div>
-                <div class="st-card-desc">
-                    <h5>Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit, sed do eiusmod </h5>
-                        <p>At first, everyone thought it to be tetanus. The pain was so severe that I could not move.
-                            So, I got admitted to the hospital.Primarily, my diagnosis
-                       <span class="morebtn">. . . Read more</span>
-                       </p>
-                </div>
-            
-            </div>
-            <div class="col-sm-6 col-lg-4 col-xl-3  story-card">
-                <div class="st-card-img"><img src="images/story-profile.png" alt=""></div>
-                <div class="st-card-filter">
-                    <a href="#" class="filter-fld tag-blue">Cervical Cancer</a>
-                    <a href="#" class="filter-fld">Stomach Cancer</a>
-                </div>
-                <div class="st-card-desc">
-                    <h5>Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit, sed do eiusmod </h5>
-                        <p>At first, everyone thought it to be tetanus. The pain was so severe that I could not move.
-                            So, I got admitted to the hospital.Primarily, my diagnosis
-                       <span class="morebtn">. . . Read more</span>
-                       </p>
-                </div>
-            
-            </div>
-            <div class="col-sm-6 col-lg-4 col-xl-3  story-card">
-                <div class="st-card-img"><img src="images/story-profile.png" alt=""></div>
-                <div class="st-card-filter">
-                    <a href="#" class="filter-fld tag-orange">Cervical Cancer</a>
-                    <a href="#" class="filter-fld">Stomach Cancer</a>
-                </div>
-                <div class="st-card-desc">
-                    <h5>Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit, sed do eiusmod </h5>
-                        <p>At first, everyone thought it to be tetanus. The pain was so severe that I could not move.
-                            So, I got admitted to the hospital.Primarily, my diagnosis
-                       <span class="morebtn">. . . Read more</span>
-                       </p>
-                </div>
-            
-            </div>
-            <div class="col-sm-6 col-lg-4 col-xl-3  story-card">
-                <div class="st-card-img"><img src="images/story-profile.png" alt=""></div>
-                <div class="st-card-filter">
-                    <a href="#" class="filter-fld tag-purple">Cervical Cancer</a>
-                    <a href="#" class="filter-fld">Stomach Cancer</a>
-                </div>
-                <div class="st-card-desc">
-                    <h5>Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit, sed do eiusmod </h5>
-                        <p>At first, everyone thought it to be tetanus. The pain was so severe that I could not move.
-                            So, I got admitted to the hospital.Primarily, my diagnosis
-                       <span class="morebtn">. . . Read more</span>
-                       </p>
-                </div>
-            
-            </div>
-            <div class="col-sm-6 col-lg-4 col-xl-3  story-card">
-                <div class="st-card-img"><img src="images/story-profile.png" alt=""></div>
-                <div class="st-card-filter">
-                    <a href="#" class="filter-fld ">Cervical Cancer</a>
-                    <a href="#" class="filter-fld">Stomach Cancer</a>
-                </div>
-                <div class="st-card-desc">
-                    <h5>Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit, sed do eiusmod </h5>
-                        <p>At first, everyone thought it to be tetanus. The pain was so severe that I could not move.
-                            So, I got admitted to the hospital.Primarily, my diagnosis
-                       <span class="morebtn">. . . Read more</span>
-                       </p>
-                </div>
-            
-            </div>
+      <div class="row">
+        <div class="col-sm-6 col-lg-4 col-xl-3 story-card">
+          <div class="st-card-img">
+            <img src="images/story-profile.png" alt="" />
+          </div>
+          <div class="st-card-filter">
+            <a href="#" class="filter-fld tag-blue">Cervical Cancer</a>
+            <a href="#" class="filter-fld">Stomach Cancer</a>
+          </div>
+          <div class="st-card-desc">
+            <h5>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod
+            </h5>
+            <p>
+              At first, everyone thought it to be tetanus. The pain was so
+              severe that I could not move. So, I got admitted to the
+              hospital.Primarily, my diagnosis
+              <span class="morebtn">. . . Read more</span>
+            </p>
+          </div>
         </div>
-        <div class="sbn">
-            <ul class="btn-nav">
-                <li><a class="is-active" href="#!">1</a></li>
-                <li><a href="#!">2</a></li>
-                <li><a href="#!">3</a></li>
-            </ul>
+        <div class="col-sm-6 col-lg-4 col-xl-3 story-card">
+          <div class="st-card-img">
+            <img src="images/story-profile.png" alt="" />
+          </div>
+          <div class="st-card-filter">
+            <a href="#" class="filter-fld tag-orange">Cervical Cancer</a>
+            <a href="#" class="filter-fld">Stomach Cancer</a>
+          </div>
+          <div class="st-card-desc">
+            <h5>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod
+            </h5>
+            <p>
+              At first, everyone thought it to be tetanus. The pain was so
+              severe that I could not move. So, I got admitted to the
+              hospital.Primarily, my diagnosis
+              <span class="morebtn">. . . Read more</span>
+            </p>
+          </div>
         </div>
+        <div class="col-sm-6 col-lg-4 col-xl-3 story-card">
+          <div class="st-card-img">
+            <img src="images/story-profile.png" alt="" />
+          </div>
+          <div class="st-card-filter">
+            <a href="#" class="filter-fld tag-purple">Cervical Cancer</a>
+            <a href="#" class="filter-fld">Stomach Cancer</a>
+          </div>
+          <div class="st-card-desc">
+            <h5>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod
+            </h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod
+              <span class="dots"> . . .</span>
+              <span class="more"
+                >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod </span
+              ><span class="morebtn">Read more</span>
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 col-xl-3 story-card">
+          <div class="st-card-img">
+            <img src="images/story-profile.png" alt="" />
+          </div>
+          <div class="st-card-filter">
+            <a href="#" class="filter-fld">Cervical Cancer</a>
+            <a href="#" class="filter-fld">Stomach Cancer</a>
+          </div>
+          <div class="st-card-desc">
+            <h5>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod
+            </h5>
+            <p>
+              At first, everyone thought it to be tetanus. The pain was so
+              severe that I could not move. So, I got admitted to the
+              hospital.Primarily, my diagnosis
+              <span class="morebtn">. . . Read more</span>
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 col-xl-3 story-card">
+          <div class="st-card-img">
+            <img src="images/story-profile.png" alt="" />
+          </div>
+          <div class="st-card-filter">
+            <a href="#" class="filter-fld tag-blue">Cervical Cancer</a>
+            <a href="#" class="filter-fld">Stomach Cancer</a>
+          </div>
+          <div class="st-card-desc">
+            <h5>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod
+            </h5>
+            <p>
+              At first, everyone thought it to be tetanus. The pain was so
+              severe that I could not move. So, I got admitted to the
+              hospital.Primarily, my diagnosis
+              <span class="morebtn">. . . Read more</span>
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 col-xl-3 story-card">
+          <div class="st-card-img">
+            <img src="images/story-profile.png" alt="" />
+          </div>
+          <div class="st-card-filter">
+            <a href="#" class="filter-fld tag-orange">Cervical Cancer</a>
+            <a href="#" class="filter-fld">Stomach Cancer</a>
+          </div>
+          <div class="st-card-desc">
+            <h5>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod
+            </h5>
+            <p>
+              At first, everyone thought it to be tetanus. The pain was so
+              severe that I could not move. So, I got admitted to the
+              hospital.Primarily, my diagnosis
+              <span class="morebtn">. . . Read more</span>
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 col-xl-3 story-card">
+          <div class="st-card-img">
+            <img src="images/story-profile.png" alt="" />
+          </div>
+          <div class="st-card-filter">
+            <a href="#" class="filter-fld tag-purple">Cervical Cancer</a>
+            <a href="#" class="filter-fld">Stomach Cancer</a>
+          </div>
+          <div class="st-card-desc">
+            <h5>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod
+            </h5>
+            <p>
+              At first, everyone thought it to be tetanus. The pain was so
+              severe that I could not move. So, I got admitted to the
+              hospital.Primarily, my diagnosis
+              <span class="morebtn">. . . Read more</span>
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 col-xl-3 story-card">
+          <div class="st-card-img">
+            <img src="images/story-profile.png" alt="" />
+          </div>
+          <div class="st-card-filter">
+            <a href="#" class="filter-fld">Cervical Cancer</a>
+            <a href="#" class="filter-fld">Stomach Cancer</a>
+          </div>
+          <div class="st-card-desc">
+            <h5>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod
+            </h5>
+            <p>
+              At first, everyone thought it to be tetanus. The pain was so
+              severe that I could not move. So, I got admitted to the
+              hospital.Primarily, my diagnosis
+              <span class="morebtn">. . . Read more</span>
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 col-xl-3 story-card">
+          <div class="st-card-img">
+            <img src="images/story-profile.png" alt="" />
+          </div>
+          <div class="st-card-filter">
+            <a href="#" class="filter-fld tag-blue">Cervical Cancer</a>
+            <a href="#" class="filter-fld">Stomach Cancer</a>
+          </div>
+          <div class="st-card-desc">
+            <h5>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod
+            </h5>
+            <p>
+              At first, everyone thought it to be tetanus. The pain was so
+              severe that I could not move. So, I got admitted to the
+              hospital.Primarily, my diagnosis
+              <span class="morebtn">. . . Read more</span>
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 col-xl-3 story-card">
+          <div class="st-card-img">
+            <img src="images/story-profile.png" alt="" />
+          </div>
+          <div class="st-card-filter">
+            <a href="#" class="filter-fld tag-orange">Cervical Cancer</a>
+            <a href="#" class="filter-fld">Stomach Cancer</a>
+          </div>
+          <div class="st-card-desc">
+            <h5>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod
+            </h5>
+            <p>
+              At first, everyone thought it to be tetanus. The pain was so
+              severe that I could not move. So, I got admitted to the
+              hospital.Primarily, my diagnosis
+              <span class="morebtn">. . . Read more</span>
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 col-xl-3 story-card">
+          <div class="st-card-img">
+            <img src="images/story-profile.png" alt="" />
+          </div>
+          <div class="st-card-filter">
+            <a href="#" class="filter-fld tag-purple">Cervical Cancer</a>
+            <a href="#" class="filter-fld">Stomach Cancer</a>
+          </div>
+          <div class="st-card-desc">
+            <h5>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod
+            </h5>
+            <p>
+              At first, everyone thought it to be tetanus. The pain was so
+              severe that I could not move. So, I got admitted to the
+              hospital.Primarily, my diagnosis
+              <span class="morebtn">. . . Read more</span>
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 col-xl-3 story-card">
+          <div class="st-card-img">
+            <img src="images/story-profile.png" alt="" />
+          </div>
+          <div class="st-card-filter">
+            <a href="#" class="filter-fld">Cervical Cancer</a>
+            <a href="#" class="filter-fld">Stomach Cancer</a>
+          </div>
+          <div class="st-card-desc">
+            <h5>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod
+            </h5>
+            <p>
+              At first, everyone thought it to be tetanus. The pain was so
+              severe that I could not move. So, I got admitted to the
+              hospital.Primarily, my diagnosis
+              <span class="morebtn">. . . Read more</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="sbn">
+        <ul class="btn-nav">
+          <li><a class="is-active" href="#!">1</a></li>
+          <li><a href="#!">2</a></li>
+          <li><a href="#!">3</a></li>
+        </ul>
+      </div>
     </section>
     <!-- footer -->
     <footer class="footer pt-5 pb-3">
@@ -427,7 +489,7 @@
             </div>
         </div>
         </div>
-        <hr style="background:#ccc;height: 1px;"> 
+        <hr style="background: #373739;height: 1px;border: none;"> 
         <div class="wrapper copyright">
             <div class="row">
                 <div class="col-md-4 cr-item">
@@ -456,26 +518,23 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script>
-    $(document).ready(function(){
-        $('.btn-nav li a').on('click', function(){
-                $(this).closest('.btn-nav').find('a').removeClass('is-active');
-                $(this).addClass('is-active');
-                return false;
-            });
-        $(".btnopn").click(function(){
-            $(".filter-container").slideDown();
-            $(".filter-box").toggle();
-            
+      $(document).ready(function () {
+        $(".btn-nav li a").on("click", function () {
+          $(this).closest(".btn-nav").find("a").removeClass("is-active");
+          $(this).addClass("is-active");
+          return false;
         });
-        $(".btn-close").click(function(){
-            $(".filter-container").slideUp();
-            $(".filter-box").fadeToggle(1000);
-            
-            
+        $(".btnopn").click(function () {
+          $(".filter-container").slideDown();
+          $(".filter-box").toggle();
+        });
+        $(".btn-close").click(function () {
+          $(".filter-container").slideUp();
+          $(".filter-box").fadeToggle(1000);
         });
 
-    /*no need redirect to new page */    
-    /*     
+        /*no need redirect to new page */
+        /*     
         $(".morebtn").click(function(){
             $(this).prev().toggle();
             $(this).siblings('.dots').toggle();
@@ -487,9 +546,7 @@
             }
         });
     */
-    }); 
-    
-
+      });
     </script>
   </body>
 </html>
