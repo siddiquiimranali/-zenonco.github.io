@@ -23,15 +23,15 @@
   --hover-1: 230px;
   --hover-2: 55px;
 }
+
 ::placeholder {
-  color: #808080;
   opacity: 1;
 }
 :-ms-input-placeholder {
-  color: #808080;
+  opacity: 1;
 }
 ::-ms-input-placeholder {
-  color: #808080;
+  opacity: 1;
 }
 
 body {
@@ -59,6 +59,9 @@ a {
 .row {
   margin-left: 0px;
   margin-right: 0px;
+}
+.navbar-collapse {
+  padding: 0 1rem;
 }
 
 /**/
@@ -109,7 +112,7 @@ a {
 }
 
 .navbar-brand img {
-  max-width: 180px;
+  max-width: 250px;
 }
 
 .rt-nav {
@@ -123,6 +126,10 @@ a {
   font-size: 17px;
   letter-spacing: 1px;
   text-align: right;
+}
+.rt-nav a .fa {
+  font-size: 18px;
+  font-weight: 600;
 }
 .header-search {
   margin-left: 1rem;
@@ -138,6 +145,7 @@ a {
   border: none;
   padding: 5px 10px;
   border-radius: 5px;
+  font-size: 18px;
 }
 .footer {
   background: #222224;
@@ -231,35 +239,36 @@ a {
   width: 100%;
   object-fit: cover;
 }
-
 .sec_newsletter {
-  background: linear-gradient(
-    90deg,
-    rgba(20, 117, 162, 1) 27%,
-    rgba(32, 186, 150, 1) 87%
-  );
+  background: url("../images/newsletter.jpg");
 }
 .sec_newsletter h4 {
-  font-size: 1rem;
-  margin-bottom: 1.5rem;
+  font-family: Poppins-Medium;
+  font-size: 24px;
+  margin-bottom: 20px;
   color: #fff;
-  text-transform: uppercase;
-  font-weight: 600;
+  text-transform: capitalize;
 }
 
 .frm-subs .frm-field {
-  width: 350px;
-  border: 1px solid #f2f2f2;
-  padding: 8px 10px;
-  border-radius: 6px;
+  font-family: Poppins-Regular;
+  width: 60%;
+  max-width: 600px;
+  background: #14a281;
+  color: #fff;
+  border: 1px solid #14a281;
+  padding: 15px 25px;
+  border-radius: 36px;
+  font-size: 16px;
 }
 .frm-subs .frm-btn {
-  background: #fff;
+  background: transparent;
+  border: none;
+  outline: none;
   width: 40px;
   display: inline-block;
-  padding: 2px;
   cursor: pointer;
-  margin-left: -50px;
+  margin-left: -60px;
 }
 .frm-subs .frm-btn img {
   width: 30px;
@@ -297,7 +306,7 @@ a {
 .frm-oncologist button {
   font-family: Poppins-Regular;
   font-size: 14px;
-  width: 200px;
+  width: 250px;
   border-radius: 26px;
   border: 1px solid #fff;
   -webkit-appearance: none;
@@ -306,7 +315,7 @@ a {
   margin-right: 1rem;
   padding: 8px 20px;
   background: #fff;
-  box-shadow: 2px 2px 3px 2px #ddd;
+  box-shadow: 2px 2px 3px 1px #ddd;
   color: #666666;
 }
 .frm-oncologist select {
@@ -704,6 +713,9 @@ a {
 .wrapper {
   padding: 0 100px;
 }
+.homewrapper {
+  padding: 50px 100px;
+}
 .storires-cards {
   padding-bottom: 50px !important;
 }
@@ -718,7 +730,7 @@ a {
   margin-bottom: 40px;
 }
 .st-card-filter .filter-fld {
-  font-size: 11px;
+  font-size: 12px;
   padding: 4px 10px;
 }
 .st-card-desc h5 {
@@ -753,9 +765,77 @@ a {
   height: 267px;
   z-index: 21;
 }
+
+.sec_care {
+  background: #1fb995;
+}
+.homewrapper .title {
+  font-family: Poppins-SemiBold;
+  font-size: 44px;
+  text-align: center;
+}
+.homewrapper p {
+  font-family: Poppins-Regular;
+  text-align: center;
+  font-size: 16px;
+}
+.sec_care img {
+  max-width: 100%;
+}
+.sec_care .care-card {
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.care-card [class*="col-"] {
+  padding: 0px;
+}
+.care-card .care-img {
+  max-width: 225px;
+}
+.care-card .care-info {
+  padding-left: 5px;
+}
+.care-info p,
+h5 {
+  text-align: left;
+}
+.care-info h5 {
+  color: #111111;
+  font-family: Poppins-SemiBold;
+  font-size: 24px;
+  margin-top: 20px;
+}
+.care-info p {
+  color: #333333;
+  font-family: Poppins-Regular;
+  font-size: 16px;
+  margin-bottom: 5px;
+  line-height: 1.25;
+  display: list-item;
+  margin-left: 10px;
+}
+.sec_lifestyle {
+  background: #fefefe;
+  color: #0194da;
+}
+
 @media screen and (max-width: 1600px) {
   .wrapper {
     padding: 0 50px;
+  }
+  .homewrapper {
+    padding: 50px 50px;
+  }
+  .care-card .care-img {
+    max-width: 150px;
+    margin-right: 10px;
+  }
+  .care-info h5 {
+    font-size: 20px;
+  }
+  .care-info p {
   }
 }
 @media screen and (max-width: 991px) {
