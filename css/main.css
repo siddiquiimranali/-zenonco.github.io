@@ -306,6 +306,9 @@ a {
 .sec_doc {
   background: #f2f2f2;
 }
+.sec_doc .btn-filter {
+  display: none;
+}
 .sec_doc .filter-toggle {
   font-family: Poppins-Medium;
   margin-right: 10px;
