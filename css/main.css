@@ -306,36 +306,46 @@ a {
 .sec_doc {
   background: #f2f2f2;
 }
+.sec_doc .filter-toggle {
+  font-family: Poppins-Medium;
+  margin-right: 10px;
+  padding: 8px 16px;
+  border-radius: 24px;
+  color: var(--secondary-clr);
+  background: #fff;
+  border: 2px solid var(--secondary-clr);
+  font-weight: 500;
+  font-size: 16px;
+  transition: all 500ms ease;
+}
 .sec_doc h2 {
   font-family: Poppins-SemiBold;
   color: var(--secondary-clr);
   font-size: 36px;
   letter-spacing: 0;
   text-shadow: 4.226px 9.063px 10px rgba(0, 0, 0, 0.05);
+  text-align: left;
 }
 .txt-light {
   font-family: Poppins-Regular;
 }
 .frm-oncologist {
   margin-top: 1rem;
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  flex-wrap: wrap;
+  text-align: left;
 }
 .frm-oncologist input,
 .frm-oncologist select,
 .frm-oncologist button {
   font-family: Poppins-Regular;
   font-size: 14px;
-  width: 250px;
+  width: 15%;
   border-radius: 26px;
   border: 1px solid #fff;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   margin-right: 1rem;
-  padding: 8px 20px;
+  padding: 15px 20px;
   background: #fff;
   box-shadow: 2px 2px 3px 1px #ddd;
   color: #666666;
@@ -354,13 +364,13 @@ a {
   letter-spacing: 0px;
   font-size: 16px;
   text-align: center;
-  line-height: 42px;
   border-radius: 26px;
-  width: 145px;
-  height: 52px;
-  padding: 0px;
+  min-width: 145px;
+  padding: 13px 25px;
 }
-
+.reset-button {
+  display: inline-block;
+}
 .frm-oncologist .btn-reload {
   padding-top: 5px;
   color: var(--secondary-clr);
@@ -372,10 +382,11 @@ a {
   padding: 10px;
   border-radius: 4px;
   margin-top: 20px;
+  text-align: left;
 }
 .dr-profile {
   align-self: center;
-  max-width: 250px;
+  max-width: 225px;
   padding-right: 0px;
   padding-left: 0px;
 }
@@ -421,6 +432,9 @@ a {
   font-size: 15px;
   font-weight: 400;
 }
+.dr-info .dr-exp {
+  display: none;
+}
 .dr-info .list-icons {
   margin-right: 5px;
 }
@@ -434,7 +448,9 @@ a {
 .dr-booking p.txt-b {
   color: var(--secondary-clr);
 }
-
+.dr-booking .dr-loc {
+  margin-top: 1rem;
+}
 .dr-info .fa {
   margin-right: 5px;
   font-size: 16px;
@@ -714,6 +730,17 @@ a {
   padding: 50px 100px;
   text-align: center;
 }
+.homewrapper .title {
+  font-family: Poppins-SemiBold;
+  font-size: 44px;
+  text-align: center;
+}
+.homewrapper .para {
+  font-family: Poppins-Regular;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 2rem !important;
+}
 .storires-cards {
   padding-bottom: 50px !important;
 }
@@ -763,16 +790,9 @@ a {
 .sec_care {
   background: #1fb995;
 }
-.homewrapper .title {
-  font-family: Poppins-SemiBold;
-  font-size: 44px;
-  text-align: center;
-}
-.homewrapper .para {
-  font-family: Poppins-Regular;
-  text-align: center;
+
+.sec_care .para {
   font-size: 16px;
-  margin-bottom: 2rem !important;
 }
 .sec_care img {
   max-width: 100%;
@@ -799,7 +819,7 @@ h5 {
 .care-info h5 {
   color: #111111;
   font-family: Poppins-SemiBold;
-  font-size: 24px;
+  font-size: 28px;
   margin-top: 20px;
 }
 .care-info p {
@@ -816,10 +836,15 @@ h5 {
   background: #fefefe;
   color: #0194da;
 }
+.sec_lifestyle .title {
+  font-family: Poppins-Medium;
+  font-size: 48px;
+}
 .sec_lifestyle .para {
   width: 60%;
   margin: 0 auto;
   color: #888888;
+  font-size: 16px;
 }
 
 .card-lifestyle {
@@ -831,6 +856,7 @@ h5 {
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
   width: 100%;
+  min-height: 200px;
 }
 .card-lifestyle .card-lifestyle-info {
   padding: 2.5rem;
@@ -946,8 +972,10 @@ h5 {
   margin-bottom: 1rem;
 }
 .sec_cured p {
-  font-family: Poppins-Regular;
+  font-family: Poppins-Medium;
   font-size: 22px;
+  line-height: 1.27;
+  margin: 0;
 }
 .btn_common {
   display: inline-block;
@@ -959,7 +987,6 @@ h5 {
   border: 2px solid #0194da;
   font-size: 18px;
   text-align: center;
-  height: 60px;
   margin-top: 2rem;
   transition: all 500ms ease;
 }
@@ -993,6 +1020,7 @@ h5 {
   width: 60%;
   margin: 0 auto;
   margin-bottom: 0px;
+  font-size: 16px;
   color: #888888;
 }
 .sec_survivor_stories .btn_common {
@@ -1063,7 +1091,7 @@ h5 {
   font-family: Poppins-SemiBold;
   font-size: 18px;
   color: #333;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .with-text {
   font-family: "Alex Brush", cursive;
@@ -1122,7 +1150,7 @@ h5 {
   color: #0194da;
 }
 .sec_blogs_stories .para {
-  width: 60%;
+  width: 100%;
   margin: 0 auto;
   margin-bottom: 0px;
   color: #888888;
@@ -1221,6 +1249,22 @@ h5 {
 .sec_diag_test .title {
   color: #0194da;
 }
+.sec_join_class .para {
+  font-size: 16px;
+}
+.slider-card-body .class-tag {
+  background: #0194da;
+  padding: 10px 12px;
+  border-radius: 30px;
+  z-index: 1;
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 1.25rem;
+}
+.slider-card-body .class-tag p {
+  margin: 0px;
+}
 .sec_diag_test input {
   padding: 10px 20px;
 }
@@ -1242,7 +1286,7 @@ h5 {
   font-family: Poppins-SemiBold;
   font-size: 17px;
   color: #003e5b;
-  margin-bottom: 1.25rem;
+  margin-bottom: 12px;
 }
 .card-diag-test .test-link:before {
   content: url("../images/icons/plus.png");
@@ -1270,7 +1314,7 @@ h5 {
   margin-top: 2rem;
 }
 .diag-test-frm input[type="text"] {
-  padding: 18px 30px;
+  padding: 15px 30px;
   padding-left: 50px;
   font-family: Poppins-Light;
   font-size: 16px;
@@ -1315,12 +1359,11 @@ h5 {
 .diag-card img {
   width: 60px;
   height: 60px;
-  margin-right: 15px;
+  margin-right: 10px;
 }
 .diag-card p {
   margin: 0px;
   font-size: 16px;
-  align-self: baseline;
 }
 .sec_assitance {
   background: #eefaff;
@@ -1330,15 +1373,21 @@ h5 {
 }
 .sec_assitance .title {
   color: #0194da;
+  font-family: Poppins-Medium;
+  font-size: 48px;
 }
 .sec_assitance .para {
   width: 60%;
   margin: 0 auto;
   color: #888;
+  font-size: 16px;
 }
 .sec_assitance .assist-blocks {
   display: flex;
   text-align: left;
+}
+.sec_assitance .btn_common {
+  font-size: 16px;
 }
 .assist-frm h4 {
   font-family: Poppins-SemiBold;
@@ -1419,7 +1468,7 @@ h5 {
   font-family: Poppins-Regular;
   font-size: 18px;
   color: #003e5b;
-  line-height: 1;
+  line-height: 1.25;
 }
 
 .sec_rep_fil {
@@ -1462,12 +1511,13 @@ h5 {
 }
 .sec_rep_fil .para {
   color: #666666;
-  width: 60%;
+  width: 80%;
   margin: 0 auto;
 }
 .sec_rep_fil .rep-filter {
   align-self: flex-end;
 }
+/*
 .sec_rep_fil .tandc {
   font-family: Poppins-Regular;
   font-size: 13px;
@@ -1475,6 +1525,14 @@ h5 {
 }
 .sec_rep_fil .tandc a {
   color: #0194da;
+}
+*/
+.sec_rep_fil .note {
+  font-family: Poppins-Regular;
+  font-size: 13px;
+  color: #666666;
+  margin-top: 2rem;
+  margin-bottom: 0px;
 }
 .sec_search {
   background: #003e5b;
@@ -1498,6 +1556,11 @@ h5 {
   padding: 12px;
   width: 100%;
 }
+.search-box input::-webkit-input-placeholder,
+.search-box input::placeholder {
+  color: #7391a2;
+}
+
 .search-box .search-box-fld {
   display: inline-block;
   background: #1c536d;
@@ -1602,15 +1665,22 @@ h5 {
 }
 .frm-home .btn_common {
   margin-top: 1rem;
+  font-family: Poppins-SemiBold;
+  font-size: 14px;
+  height: 45px;
+  padding: 10px 24px;
 }
 .sec_home_banner [class*="col-"] {
   padding: 0px;
 }
+
 .sec_sec_opinion .title {
   color: #0194da;
 }
 .sec_sec_opinion .para {
   color: #888888;
+  font-size: 18px;
+  margin-bottom: 1.25rem !important;
 }
 .sec_sec_opinion .opinion-tabs {
   margin-bottom: 1.5rem;
@@ -1637,6 +1707,10 @@ h5 {
   color: #1fb995;
 }
 
+.sec_sec_opinion .card-wrapper {
+  border: 1px solid #eee;
+  border-radius: 4px;
+}
 .sec_sec_opinion .slider-sub-title {
   font-family: Poppins-Medium;
 }
@@ -1644,7 +1718,7 @@ h5 {
   font-family: Poppins-Medium;
   color: #0ea481;
   font-size: 15px;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 .sec_sec_opinion .title-exp {
   font-family: Poppins-Medium;
@@ -1658,8 +1732,11 @@ h5 {
 }
 .sec_sec_opinion .slider-btn {
   color: #0194da;
-  border: 2px solid #0194da;
+  border: 1px solid #0194da;
+  font-size: 14px;
+  padding: 8px 16px;
 }
+
 .sec_sec_opinion .slider-btn:hover {
   background: #0194da;
   color: #fff;
@@ -1677,6 +1754,17 @@ h5 {
   padding: 1.25rem;
   padding-bottom: 0px;
 }
+.sec_sec_opinion .note {
+  font-family: Poppins-Regular;
+  margin: 0px;
+  font-size: 18px;
+  color: #666666;
+}
+.sec_sec_opinion .btn_common {
+  margin-top: 10px;
+  padding: 10px 20px;
+}
+
 @media screen and (max-width: 1600px) {
   .wrapper {
     padding: 0 50px;
@@ -1687,9 +1775,6 @@ h5 {
   .care-card .care-img {
     max-width: 150px;
     margin-right: 10px;
-  }
-  .care-info h5 {
-    font-size: 20px;
   }
 
   .sec_talk_warriors {
@@ -1710,12 +1795,25 @@ h5 {
   .sec_talk_warriors .btn-joincomm {
     font-size: 16px;
   }
+  .homewrapper .title {
+    font-size: 38px;
+  }
+  .hero-banner {
+    height: 250px;
+  }
 }
 @media screen and (max-width: 1280px) {
   .sec_doc h2 {
     font-size: 28px;
   }
+  .frm-oncologist input,
+  .frm-oncologist select,
+  .frm-oncologist button {
+    width: 25%;
+    margin-bottom: 1.5rem;
+  }
 }
+
 @media screen and (max-width: 991px) {
   .navbar.main-menu {
     padding: 10px 5px;
@@ -1723,6 +1821,17 @@ h5 {
   .wrapper {
     padding: 0 25px;
   }
+  .homewrapper {
+    padding: 50px 20px;
+  }
+
+  .dr-booking p {
+    margin-bottom: 10px !important;
+  }
+  .dr-booking .dr-loc {
+    margin-top: 0;
+  }
+  /*
   .frm-oncologist {
     flex-direction: column;
     text-align: center;
@@ -1732,10 +1841,11 @@ h5 {
   .frm-oncologist button {
     margin-bottom: 1rem;
   }
+  */
   .frm-oncologist input,
   .frm-oncologist select,
   .frm-oncologist button {
-    width: 50%;
+    width: 47%;
   }
   .sec_cured .cured-img {
     margin-bottom: 10px;
@@ -1748,6 +1858,79 @@ h5 {
     font-size: 18px;
   }
 }
+@media screen and (max-width: 767px) {
+  .sec_doc .homewrapper {
+    padding-top: 20px;
+  }
+  .sec_doc .btn-filter {
+    display: block;
+  }
+  .hero-banner {
+    height: 200px;
+  }
+  .frm-oncologist {
+    flex-direction: column;
+    text-align: center;
+    display: none;
+  }
+  .frm-oncologist input,
+  .frm-oncologist select {
+    width: 100%;
+    max-width: 250px;
+  }
+  .frm-oncologist button {
+    width: 150px !important;
+  }
+  .frm-oncologist input,
+  .frm-oncologist select,
+  .frm-oncologist button {
+    margin-bottom: 1rem;
+  }
+  .reset-button {
+    display: flex;
+    justify-content: center;
+  }
+
+  .frm-oncologist .btn-reload {
+    line-height: 45px;
+  }
+  .card-dr .mob-info {
+    display: none;
+  }
+  .dr-profile {
+    width: 150px;
+    margin: 0 auto;
+  }
+  .dr-info h4 {
+    font-size: 16px;
+  }
+  .dr-info h5 {
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 15px;
+  }
+  .dr-info .dr-exp {
+    display: block;
+    font-family: Poppins-Medium;
+    color: #666666;
+    font-size: 14px;
+  }
+  .dr-info p {
+    margin-bottom: 5px;
+  }
+  .card-dr {
+    text-align: center;
+  }
+  .card-dr .dr-info,
+  .card-dr .dr-booking {
+    padding-bottom: 0px;
+  }
+  .dr-booking button {
+    width: auto;
+    height: auto;
+    padding: 8px 16px;
+  }
+}
 @media screen and (max-width: 539px) {
   .frm-oncologist input,
   .frm-oncologist select,
@@ -1758,11 +1941,5 @@ h5 {
     font-size: 20px;
   }
 }
-
-/*
-#myselect * {
-  background: #fff;
-  color: #0194da;
-  font-size: 16px;
+@media screen and (max-width: 420px) {
 }
-*/

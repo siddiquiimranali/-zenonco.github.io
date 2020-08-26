@@ -82,13 +82,16 @@
         <img class="hero-banner" src="images/bg.jpg" alt="">
     </section>
     <!-- main -->
-    <section class="sec_doc py-5">
-        <div class="wrapper">
-            <h2>Book appointment with an oncologist <span class="txt-light">( at hospital or via video call)</span></h2>
-            <form action="" class="frm-oncologist">
-                
+    <section class="sec_doc">
+        <div class="homewrapper">
+            <h2>Book appointment with an oncologist <span class="txt-light">(at hospital or via video call)</span></h2>
+            <div class="btn-filter" style="text-align: right;">
+                <button class="filter-toggle" >
+                <i class="fa fa-filter"></i> filter </button>
+            </div>
+            <form action="" class="frm-oncologist" >
                 <select name="" id="">
-                    <option value="item1">Type</option>
+                    <option value="item1">Cancer type</option>
                     <option value="item1">type 1</option>
                     <option value="item1">type 2</option>
                     <option value="item1">type 3</option>
@@ -109,30 +112,30 @@
                     <option value="item1">value 4</option>
                 </select>
                 <input type="text" placeholder="Search by name">
-                <div class="">
-                <button>search</button>
-                <a href="#" class="btn-reload"><i class="fa fa-repeat"></i></a>
+                <div class="reset-button">
+                    <button>search</button>
+                    <a href="#" class="btn-reload"><i class="fa fa-repeat"></i></a>
                 </div>
                 
             </form>
             <div class="row card-dr">
                 <div class="col-md-4 col-lg-2 dr-profile">
-                    <img class="dr-img" src="images/dr.jpg" alt="">
-                    <img class="watermark" src="images/watermark.png" alt="logo" >
+                    <img class="dr-img" src="images/doctor.jpg" alt="">
                 </div>
                 <div class="col-md-8 col-lg-6 dr-info">
                     <h4>Dr. Sandeep Maheshwari</h4>
                     <h5>Medical oncologist</h5>
-                    <p class="txt-b"><img src="images/icons/cancer.png" class="list-icons">Blood Cancer, Bone Marrow Transplant</p>
-                    <p class="txt-b"><img src="images/icons/location.png" class="list-icons">Millennium Cancer Center</p>
-                    <p><img src="images/icons/bag.png" class="list-icons">10 years of overall experience</p>
-                    <p><img src="images/icons/graduate.png" class="list-icons">MBBS, M.S (Otorhinolaryngology), M.Ch Head & Neck Surgical Oncology </p>
+                    <h4 class="dr-exp">10 Years Exp. I Mumbai</h4>
+                    <p class="txt-b mob-info"><img src="images/icons/cancer.png" class="list-icons">Blood Cancer, Bone Marrow Transplant</>
+                    <p class="txt-b mob-info"><img src="images/icons/loc.png" class="list-icons">Millennium Cancer Center</p>
+                    <p class="mob-info"><img src="images/icons/bag.png" class="list-icons">10 years of overall experience</p>
+                    <p class="mob-info"><img src="images/icons/graduate.png" class="list-icons">MBBS, M.S (Otorhinolaryngology), M.Ch Head & Neck Surgical Oncology </p>
                 </div>
                 <div class="col-lg-4 dr-booking">
-                    <div class="float-md-right">
-                    <p class="mt-3 txt-b"><i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <div class="float-lg-right">
+                    <p class="mob-info dr-loc txt-b"><i class="fa fa-map-marker" aria-hidden="true"></i>
                         Pune</p>
-                    <p class="mb-4"><i class="fa fa-inr" aria-hidden="true"></i>
+                    <p class="mob-info mb-4"><i class="fa fa-inr" aria-hidden="true"></i>
                         From 3000 / consultation</p>
                     <p>
                         <button>Profile</button>
@@ -142,22 +145,22 @@
             </div>
             <div class="row card-dr">
                 <div class="col-md-4 col-lg-2 dr-profile">
-                    <img class="dr-img" src="images/dr.jpg" alt="">
-                    <img class="watermark" src="images/watermark.png" alt="logo" >
+                    <img class="dr-img" src="images/doctor.jpg" alt="">
                 </div>
                 <div class="col-md-8 col-lg-6 dr-info">
                     <h4>Dr. Sandeep Maheshwari</h4>
                     <h5>Medical oncologist</h5>
-                    <p class="txt-b"><img src="images/icons/cancer.png" class="list-icons">Blood Cancer, Bone Marrow Transplant</p>
-                    <p class="txt-b"><img src="images/icons/location.png" class="list-icons">Millennium Cancer Center</p>
-                    <p><img src="images/icons/bag.png" class="list-icons">10 years of overall experience</p>
-                    <p><img src="images/icons/graduate.png" class="list-icons">MBBS, M.S (Otorhinolaryngology), M.Ch Head & Neck Surgical Oncology </p>
+                    <h4 class="dr-exp">10 Years Exp. I Mumbai</h4>
+                    <p class="txt-b mob-info"><img src="images/icons/cancer.png" class="list-icons">Blood Cancer, Bone Marrow Transplant</>
+                    <p class="txt-b mob-info"><img src="images/icons/loc.png" class="list-icons">Millennium Cancer Center</p>
+                    <p class="mob-info"><img src="images/icons/bag.png" class="list-icons">10 years of overall experience</p>
+                    <p class="mob-info"><img src="images/icons/graduate.png" class="list-icons">MBBS, M.S (Otorhinolaryngology), M.Ch Head & Neck Surgical Oncology </p>
                 </div>
                 <div class="col-lg-4 dr-booking">
-                    <div class="float-md-right">
-                    <p class="mt-3 txt-b"><i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <div class="float-lg-right">
+                    <p class="mob-info dr-loc txt-b"><i class="fa fa-map-marker" aria-hidden="true"></i>
                         Pune</p>
-                    <p class="mb-4"><i class="fa fa-inr" aria-hidden="true"></i>
+                    <p class="mob-info mb-4"><i class="fa fa-inr" aria-hidden="true"></i>
                         From 3000 / consultation</p>
                     <p>
                         <button>Profile</button>
@@ -167,22 +170,22 @@
             </div>
             <div class="row card-dr">
                 <div class="col-md-4 col-lg-2 dr-profile">
-                    <img class="dr-img" src="images/dr.jpg" alt="">
-                    <img class="watermark" src="images/watermark.png" alt="logo" >
+                    <img class="dr-img" src="images/doctor.jpg" alt="">
                 </div>
                 <div class="col-md-8 col-lg-6 dr-info">
                     <h4>Dr. Sandeep Maheshwari</h4>
                     <h5>Medical oncologist</h5>
-                    <p class="txt-b"><img src="images/icons/cancer.png" class="list-icons">Blood Cancer, Bone Marrow Transplant</p>
-                    <p class="txt-b"><img src="images/icons/location.png" class="list-icons">Millennium Cancer Center</p>
-                    <p><img src="images/icons/bag.png" class="list-icons">10 years of overall experience</p>
-                    <p><img src="images/icons/graduate.png" class="list-icons">MBBS, M.S (Otorhinolaryngology), M.Ch Head & Neck Surgical Oncology </p>
+                    <h4 class="dr-exp">10 Years Exp. I Mumbai</h4>
+                    <p class="txt-b mob-info"><img src="images/icons/cancer.png" class="list-icons">Blood Cancer, Bone Marrow Transplant</>
+                    <p class="txt-b mob-info"><img src="images/icons/loc.png" class="list-icons">Millennium Cancer Center</p>
+                    <p class="mob-info"><img src="images/icons/bag.png" class="list-icons">10 years of overall experience</p>
+                    <p class="mob-info"><img src="images/icons/graduate.png" class="list-icons">MBBS, M.S (Otorhinolaryngology), M.Ch Head & Neck Surgical Oncology </p>
                 </div>
                 <div class="col-lg-4 dr-booking">
-                    <div class="float-md-right">
-                    <p class="mt-3 txt-b"><i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <div class="float-lg-right">
+                    <p class="mob-info dr-loc txt-b"><i class="fa fa-map-marker" aria-hidden="true"></i>
                         Pune</p>
-                    <p class="mb-4"><i class="fa fa-inr" aria-hidden="true"></i>
+                    <p class="mob-info mb-4"><i class="fa fa-inr" aria-hidden="true"></i>
                         From 3000 / consultation</p>
                     <p>
                         <button>Profile</button>
@@ -192,22 +195,22 @@
             </div>
             <div class="row card-dr">
                 <div class="col-md-4 col-lg-2 dr-profile">
-                    <img class="dr-img" src="images/dr.jpg" alt="">
-                    <img class="watermark" src="images/watermark.png" alt="logo" >
+                    <img class="dr-img" src="images/doctor.jpg" alt="">
                 </div>
                 <div class="col-md-8 col-lg-6 dr-info">
                     <h4>Dr. Sandeep Maheshwari</h4>
                     <h5>Medical oncologist</h5>
-                    <p class="txt-b"><img src="images/icons/cancer.png" class="list-icons">Blood Cancer, Bone Marrow Transplant</p>
-                    <p class="txt-b"><img src="images/icons/location.png" class="list-icons">Millennium Cancer Center</p>
-                    <p><img src="images/icons/bag.png" class="list-icons">10 years of overall experience</p>
-                    <p><img src="images/icons/graduate.png" class="list-icons">MBBS, M.S (Otorhinolaryngology), M.Ch Head & Neck Surgical Oncology </p>
+                    <h4 class="dr-exp">10 Years Exp. I Mumbai</h4>
+                    <p class="txt-b mob-info"><img src="images/icons/cancer.png" class="list-icons">Blood Cancer, Bone Marrow Transplant</>
+                    <p class="txt-b mob-info"><img src="images/icons/loc.png" class="list-icons">Millennium Cancer Center</p>
+                    <p class="mob-info"><img src="images/icons/bag.png" class="list-icons">10 years of overall experience</p>
+                    <p class="mob-info"><img src="images/icons/graduate.png" class="list-icons">MBBS, M.S (Otorhinolaryngology), M.Ch Head & Neck Surgical Oncology </p>
                 </div>
                 <div class="col-lg-4 dr-booking">
-                    <div class="float-md-right">
-                    <p class="mt-3 txt-b"><i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <div class="float-lg-right">
+                    <p class="mob-info dr-loc txt-b"><i class="fa fa-map-marker" aria-hidden="true"></i>
                         Pune</p>
-                    <p class="mb-4"><i class="fa fa-inr" aria-hidden="true"></i>
+                    <p class="mob-info mb-4"><i class="fa fa-inr" aria-hidden="true"></i>
                         From 3000 / consultation</p>
                     <p>
                         <button>Profile</button>
@@ -215,25 +218,49 @@
                 </div>
                 </div>
             </div>
-            <div class="sbn">
-                <p>Circle #1</p>
+            <div class="row card-dr">
+                <div class="col-md-4 col-lg-2 dr-profile">
+                    <img class="dr-img" src="images/doctor.jpg" alt="">
+                </div>
+                <div class="col-md-8 col-lg-6 dr-info">
+                    <h4>Dr. Sandeep Maheshwari</h4>
+                    <h5>Medical oncologist</h5>
+                    <h4 class="dr-exp">10 Years Exp. I Mumbai</h4>
+                    <p class="txt-b mob-info"><img src="images/icons/cancer.png" class="list-icons">Blood Cancer, Bone Marrow Transplant</>
+                    <p class="txt-b mob-info"><img src="images/icons/loc.png" class="list-icons">Millennium Cancer Center</p>
+                    <p class="mob-info"><img src="images/icons/bag.png" class="list-icons">10 years of overall experience</p>
+                    <p class="mob-info"><img src="images/icons/graduate.png" class="list-icons">MBBS, M.S (Otorhinolaryngology), M.Ch Head & Neck Surgical Oncology </p>
+                </div>
+                <div class="col-lg-4 dr-booking">
+                    <div class="float-lg-right">
+                    <p class="mob-info dr-loc txt-b"><i class="fa fa-map-marker" aria-hidden="true"></i>
+                        Pune</p>
+                    <p class="mob-info mb-4"><i class="fa fa-inr" aria-hidden="true"></i>
+                        From 3000 / consultation</p>
+                    <p>
+                        <button>Profile</button>
+                        <button class="inverse">Connect</button></p>
+                </div>
+                </div>
+            </div>
+            <!-- <div class="sbn">
                 <ul class="btn-nav">
                     <li><a class="is-active" href="#!">1</a></li>
                     <li><a href="#!">2</a></li>
                     <li><a href="#!">3</a></li>
                 </ul>
-            </div>
+            </div> -->
         </div>
     </section>
     <!-- newsletter section -->
-    <section class="sec_newsletter homewrapper text-center ">
+    <!-- <section class="sec_newsletter homewrapper text-center ">
         <h4 >Subscribe for latest updates on cancer</h4>
         <form action="" class="frm-subs">
             <input class="frm-field" type="text" placeholder="Enter your email address">
             <button class="frm-btn"><img src="images/subs-arrow.png"></button>
         </form>
 
-    </section>
+    </section> -->
     
     <!-- footer -->
     <footer class="footer pt-5 pb-3">
@@ -367,5 +394,12 @@
         
         });
    </script>
+   <script>
+    $(document).ready(function(){
+      $(".filter-toggle").click(function(){         
+            $(".frm-oncologist").slideToggle("5000");
+        });  
+    });
+    </script>
   </body>
 </html>
