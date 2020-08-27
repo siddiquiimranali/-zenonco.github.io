@@ -328,6 +328,7 @@ a {
   font-weight: 500;
   font-size: 16px;
   transition: all 500ms ease;
+  width: 100px;
 }
 .sec_doc h2 {
   font-family: Poppins-SemiBold;
@@ -594,6 +595,9 @@ a {
   text-shadow: 4.226px 9.063px 10px rgba(0, 0, 0, 0.05);
   text-transform: capitalize;
   padding-left: 1rem;
+  flex-basis: 60%;
+  align-self: center;
+  margin-bottom: 0px;
 }
 
 .filter-box {
@@ -641,7 +645,7 @@ a {
   margin-right: 10px;
   padding: 5px 8px;
   border-radius: 24px;
-  width: 124px;
+  width: 100px;
   color: var(--secondary-clr);
   background: #fff;
   border: 2px solid var(--secondary-clr);
