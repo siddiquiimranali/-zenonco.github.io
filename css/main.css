@@ -48,7 +48,9 @@
 *:focus {
   outline: none;
 }
-
+button:focus {
+  outline: 0 !important;
+}
 body {
   font-family: Poppins-Light, sans-serif;
   font-size: 13px;
@@ -1804,6 +1806,9 @@ h5 {
   .hero-banner {
     height: 250px;
   }
+  .sec_doc h2 {
+    font-size: 32px;
+  }
 }
 @media screen and (max-width: 1280px) {
   .sec_doc h2 {
@@ -1820,6 +1825,9 @@ h5 {
 @media screen and (max-width: 991px) {
   .navbar.main-menu {
     padding: 10px 5px;
+  }
+  .rt-nav {
+    display: none !important;
   }
   .wrapper {
     padding: 0 25px;
@@ -1941,7 +1949,7 @@ h5 {
     width: 80%;
   }
   .sec_doc h2 {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (max-width: 420px) {
