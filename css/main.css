@@ -83,6 +83,12 @@ a {
 .navbar-collapse {
   padding: 0 1rem;
 }
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.75)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.navbar-light .navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.5);
+}
 
 /**/
 .navigation {
@@ -575,6 +581,11 @@ a {
   margin-left: -39px;
 }
 /* section stories */
+.sec_stories,
+.storires-cards,
+.sec_events {
+  padding: 20px 50px;
+}
 .sec_stories h2 {
   font-family: Poppins-SemiBold;
   color: var(--secondary-clr);
@@ -584,6 +595,7 @@ a {
   text-transform: capitalize;
   padding-left: 1rem;
 }
+
 .filter-box {
   transition: transform 0.6s;
   display: flex;
@@ -678,6 +690,10 @@ a {
 .filter-container .btn-close:hover {
   background: #f9f9f9;
 }
+.filter-container .btn-close img {
+  width: 20px;
+  height: 20px;
+}
 .filter-container p {
   font-family: Poppins-SemiBold;
   color: #333333;
@@ -721,6 +737,11 @@ a {
   border-color: #a887c0;
   color: #fff;
 }
+.filter-fld.tag-blue2 {
+  background: #3882db !important;
+  border-color: #3882db;
+  color: #fff;
+}
 
 .splitter {
   width: 100%;
@@ -748,6 +769,11 @@ a {
 }
 .storires-cards {
   padding-bottom: 50px !important;
+  text-align: left;
+}
+.sec_stories .homewrapper,
+.storires-cards.homewrapper {
+  padding: 20px 50px;
 }
 .st-card-img img {
   max-width: 100%;
@@ -1770,6 +1796,63 @@ h5 {
   padding: 10px 20px;
 }
 
+.sec_events {
+  background: #f2f2f2;
+}
+.event-card-wrapper {
+  border-radius: 10px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.sec_events .slider-card-body {
+  margin-top: -50px;
+  padding: 1.25rem;
+  background: #fff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.sec_events .class-tag {
+  background: #3882db;
+  border-radius: 40px;
+  max-width: 280px;
+}
+
+.sec_events .class-tag p:first-child {
+  font-family: Poppins-Bold;
+  font-size: 20px;
+  line-height: 1.25;
+}
+.sec_events .class-tag p:last-child {
+  font-family: Poppins-SemiBold;
+  font-size: 16px;
+  line-height: 1.25;
+}
+.event-card-img img {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  width: 100%;
+}
+.event-card-wrapper .slider-btn {
+  margin-top: 1.5rem;
+  margin-bottom: 0px;
+}
+.event-card-wrapper .slider-btn-invers {
+  background: #93c341;
+  border: 2px solid #93c341;
+  color: #fff;
+}
+
+.event-card-wrapper .slider-title {
+  margin-bottom: 5px;
+  font-size: 22px;
+}
+@media screen and (min-width: 1600px) {
+  .event-box {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
 @media screen and (max-width: 1600px) {
   .wrapper {
     padding: 0 50px;
@@ -1809,9 +1892,19 @@ h5 {
   .sec_doc h2 {
     font-size: 32px;
   }
+  .sec_events .class-tag p:first-child {
+    font-size: 18px;
+  }
+  .sec_events .class-tag p:last-child {
+    font-size: 15px;
+  }
+  .event-card-wrapper .slider-title {
+    font-size: 18px;
+  }
 }
 @media screen and (max-width: 1280px) {
-  .sec_doc h2 {
+  .sec_doc h2,
+  .sec_stories h2 {
     font-size: 28px;
   }
   .frm-oncologist input,
@@ -1830,12 +1923,16 @@ h5 {
     display: none !important;
   }
   .wrapper {
-    padding: 0 25px;
+    padding: 0 20px;
   }
   .homewrapper {
     padding: 50px 20px;
   }
-
+  .sec_stories,
+  .storires-cards,
+  .sec_events {
+    padding: 20px;
+  }
   .dr-booking p {
     margin-bottom: 10px !important;
   }
@@ -1941,6 +2038,27 @@ h5 {
     height: auto;
     padding: 8px 16px;
   }
+  .story-card,
+  .event-box {
+    padding: 0px;
+  }
+  .sec_stories .filter-stories,
+  .filter-container .btn-close {
+    margin-right: 0;
+  }
+  .filter-fld {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+  .filter-container .btn-close {
+    font-size: 16px;
+    width: 40px;
+    height: 40px;
+  }
+  .filter-container .btn-close img {
+    width: 15px;
+    height: 15px;
+  }
 }
 @media screen and (max-width: 539px) {
   .frm-oncologist input,
@@ -1948,8 +2066,13 @@ h5 {
   .frm-oncologist button {
     width: 80%;
   }
-  .sec_doc h2 {
+  .sec_doc h2,
+  .sec_stories h2 {
     font-size: 24px;
+  }
+  .sec_stories h2,
+  .filter-tag {
+    padding-left: 0;
   }
 }
 @media screen and (max-width: 420px) {
