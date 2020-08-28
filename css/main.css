@@ -21,6 +21,10 @@
   src: url(../fonts/Poppins-Italic.ttf);
 }
 @font-face {
+  font-family: Poppins-LightItalic;
+  src: url(../fonts/Poppins-LightItalic.ttf);
+}
+@font-face {
   font-family: Poppins-Bold;
   src: url(../fonts/Poppins-Bold.ttf);
 }
@@ -74,6 +78,9 @@ a {
 }
 .logo {
   max-width: 150px;
+}
+.read-more {
+  color: #0194da !important;
 }
 
 .row {
@@ -585,7 +592,7 @@ a {
 .sec_stories,
 .storires-cards,
 .sec_events {
-  padding: 20px 50px;
+  padding: 20px 100px;
 }
 .sec_stories h2 {
   font-family: Poppins-SemiBold;
@@ -780,7 +787,7 @@ a {
   padding: 20px 50px;
 }
 .st-card-img img {
-  max-width: 100%;
+  width: 100%;
   border-radius: 10px;
 }
 .storires-cards .st-card-filter {
@@ -848,7 +855,7 @@ a {
   padding-left: 5px;
 }
 .care-info p,
-h5 {
+.care-info h5 {
   text-align: left;
 }
 .care-info h5 {
@@ -1808,6 +1815,20 @@ h5 {
   margin-bottom: 40px;
   text-align: center;
 }
+.event-card-wrapper .event-badge {
+  font-family: Poppins-Regular;
+  font-size: 14px;
+  width: 100px;
+  background: #fff;
+  color: #003e5b;
+  display: inline-block;
+  border-radius: 12px;
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  box-shadow: 4.663px 3.776px 35px 0px rgba(0, 0, 0, 0.3);
+}
+
 .sec_events .slider-card-body {
   margin-top: -50px;
   padding: 1.25rem;
@@ -1840,6 +1861,11 @@ h5 {
   margin-top: 1.5rem;
   margin-bottom: 0px;
 }
+.event-card-wrapper .slider-btn:hover {
+  background: #fff;
+  border-color: #ededed;
+  color: #333;
+}
 .event-card-wrapper .slider-btn-invers {
   background: #93c341;
   border: 2px solid #93c341;
@@ -1849,6 +1875,70 @@ h5 {
 .event-card-wrapper .slider-title {
   margin-bottom: 5px;
   font-size: 22px;
+}
+.sec_people_say {
+  background: #0076be;
+}
+.sec_people_say .review-box {
+  margin-bottom: 5rem;
+}
+.sec_people_say .review-box:last-child {
+  margin-bottom: 0;
+}
+.people-cmnt {
+  font-family: Poppins-LightItalic;
+  background: #fff;
+  color: #000;
+  height: 100%;
+  padding: 2rem;
+  text-align: left;
+  font-size: 16px;
+  border-radius: 2px;
+}
+
+.people-cmnt:before {
+  content: "";
+  border-bottom: 20px solid transparent;
+  border-top: 20px solid transparent;
+  border-right: 20px solid #fff;
+  top: 25px;
+  position: absolute;
+  z-index: 1;
+  left: -15px;
+}
+.circle-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.people-info {
+  padding-bottom: 10px;
+}
+.people-info p {
+  margin-bottom: 0px;
+  line-height: 1;
+}
+
+.people-info .user-name {
+  margin-top: 1rem;
+  font-size: 20px;
+  font-family: Poppins-SemiBold;
+}
+.people-info .user-tag {
+  font-family: Poppins-SemiBold;
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+.people-info .user-city {
+  font-family: Poppins-Regular;
+  font-size: 16px;
+}
+.people-cmnt .quote {
+  position: absolute;
+  top: 5px;
+  right: 10px;
 }
 @media screen and (min-width: 1600px) {
   .event-box {
@@ -1863,6 +1953,11 @@ h5 {
   }
   .homewrapper {
     padding: 50px 50px;
+  }
+  .sec_stories,
+  .storires-cards,
+  .sec_events {
+    padding: 20px 50px;
   }
   .care-card .care-img {
     max-width: 150px;
@@ -1904,6 +1999,16 @@ h5 {
   }
   .event-card-wrapper .slider-title {
     font-size: 18px;
+  }
+  .frm-subs .frm-field {
+    width: 100%;
+  }
+  .people-cmnt {
+    font-size: 14px;
+  }
+  .circle-img {
+    width: 100px;
+    height: 100px;
   }
 }
 @media screen and (max-width: 1280px) {
@@ -1968,6 +2073,12 @@ h5 {
   }
   .sec_cured p {
     font-size: 18px;
+  }
+  .footer-links {
+    padding: 0px;
+  }
+  .sec_people_say .review-box {
+    margin-bottom: 3.5rem;
   }
 }
 @media screen and (max-width: 767px) {
@@ -2063,6 +2174,15 @@ h5 {
     width: 15px;
     height: 15px;
   }
+  .copyright [class*="col-"] {
+    padding: 0px;
+  }
+  .copyright .cr-item {
+    margin-bottom: 10px;
+  }
+  .people-cmnt::before {
+    border: none;
+  }
 }
 @media screen and (max-width: 539px) {
   .frm-oncologist input,
@@ -2080,4 +2200,12 @@ h5 {
   }
 }
 @media screen and (max-width: 420px) {
+}
+.card.slider-card {
+  -webkit-transition: all 0.3s ease-in-out;
+}
+
+.card.slider-card:hover {
+  transform: scale(1);
+  -webkit-transform: scale(1.05);
 }
