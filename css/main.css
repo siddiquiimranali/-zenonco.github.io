@@ -288,6 +288,7 @@ a {
 .hero-banner {
   width: 100%;
   object-fit: cover;
+  min-height: 440px;
 }
 
 .gradient-text {
@@ -630,9 +631,9 @@ a {
 .sec_stories .filter-stories {
   font-family: Poppins-Medium;
   margin-right: 10px;
-  padding: 5px 8px;
+  padding: 5px 20px;
   border-radius: 24px;
-  width: 100px;
+  width: auto;
   color: var(--secondary-clr);
   background: #fff;
   border: 2px solid var(--secondary-clr);
@@ -641,9 +642,18 @@ a {
   height: 45px;
   transition: all 500ms ease;
 }
+.sec_stories .filter-stories:before {
+  content: url("../images/icons/filter2.png");
+  vertical-align: middle;
+  margin-right: 5px;
+}
 .sec_stories .filter-stories:hover {
   background: #0194da;
   color: #fff;
+}
+.sec_stories .filter-stories:hover:before {
+  content: url("../images/icons/filter2-hover.png");
+  vertical-align: middle;
 }
 .filter-container {
   display: none;
@@ -766,10 +776,19 @@ a {
 .storires-cards.homewrapper {
   padding: 20px 50px;
 }
+.st-card-img {
+  overflow: hidden;
+}
 .st-card-img img {
   width: 100%;
   border-radius: 10px;
+  transition: 0.5s all ease-in-out;
 }
+
+.story-card:hover img {
+  transform: scale(1.25);
+}
+
 .storires-cards .st-card-filter {
   padding: 10px 0;
 }
@@ -908,6 +927,7 @@ a {
   border-top-left-radius: 10px;
   width: 100%;
   min-height: 200px;
+  object-fit: cover;
 }
 .card-lifestyle .card-lifestyle-info {
   padding: 2rem;
@@ -1477,7 +1497,8 @@ a {
   border-color: #fff;
 }
 .card-diag-test .test-link {
-  display: block;
+  display: grid;
+  grid-template-columns: 30px 1fr;
   font-family: Poppins-SemiBold;
   font-size: 16px;
   color: #003e5b;
@@ -1821,7 +1842,8 @@ a {
   margin-bottom: 1rem;
 }
 
-.frm-home input {
+.frm-home input,
+.diag-frm input {
   font-family: Poppins-Regular;
   background: #f5fdff;
   border: 1px solid #cbeeff;
@@ -1833,12 +1855,14 @@ a {
   width: 100%;
   margin-bottom: 10px;
 }
-.frm-home .tandc {
+.frm-home .tandc,
+.diag-frm .tandc {
   font-family: Poppins-Regular;
   font-size: 13px;
   color: #666666;
 }
-.frm-home .tandc input {
+.frm-home .tandc input,
+.diag-frm .tandc input {
   font-family: Poppins-Regular;
   font-size: 13px;
   color: #666666;
@@ -1846,10 +1870,12 @@ a {
   width: auto;
   margin-right: 5px;
 }
-.frm-home .tandc a {
+.frm-home .tandc a,
+.diag-frm .tandc a {
   color: #0194da;
 }
-.frm-home .btn_common {
+.frm-home .btn_common,
+.diag-frm .btn_common {
   width: 100%;
   font-family: Poppins-SemiBold;
   font-size: 18px;
@@ -2011,15 +2037,18 @@ a {
 .event-card-wrapper .slider-btn {
   margin-top: 1.5rem;
   margin-bottom: 0px;
+  color: #333;
 }
+/*
 .event-card-wrapper .slider-btn:hover {
   background: #fff;
   border-color: #ededed;
   color: #333;
 }
+*/
 .event-card-wrapper .slider-btn-invers {
-  background: #93c341;
-  border: 2px solid #93c341;
+  background: #48bf91;
+  border: 2px solid #48bf91;
   color: #fff;
 }
 
@@ -2028,7 +2057,7 @@ a {
   font-size: 22px;
 }
 .sec_people_say {
-  background: #0076be;
+  background: #0194da;
 }
 .sec_people_say .review-box {
   margin-bottom: 5rem;
@@ -2078,13 +2107,14 @@ a {
   font-family: Poppins-SemiBold;
 }
 .people-info .user-tag {
-  font-family: Poppins-SemiBold;
-  font-size: 15px;
+  font-family: Poppins-Medium;
+  font-size: 16px;
   margin-bottom: 12px;
 }
 .people-info .user-city {
   font-family: Poppins-Regular;
   font-size: 16px;
+  color: #b8e8ff;
 }
 .people-cmnt .quote {
   position: absolute;
@@ -2148,6 +2178,50 @@ a {
   font-size: 30px;
   margin-bottom: 0px;
 }
+.sec_inner_events .homewrapper {
+  text-align: left;
+}
+.sec_inner_events .title {
+  text-align: left;
+  color: #0194da;
+}
+.sec_inner_events .diag-test-frm {
+  text-align: left;
+}
+.sec_inner_events .diag-search {
+  margin-left: 20px;
+}
+.sec_inner_events .diag-test-frm input[type="text"] {
+  background: #fff;
+  border-color: rgb(198, 237, 255);
+}
+.sec_inner_events [class*="col-"] {
+  padding: 0px;
+}
+.sec_inner_events .card-diag-test .test-link {
+  color: #000;
+}
+.sec_inner_events .card-diag-test .card-lifestyle-info {
+  min-height: 300px;
+}
+
+.sec_inner_events .card-lifestyle .b-card {
+  min-height: 200px !important;
+}
+.diag-frm {
+  background: #fff;
+  padding: 60px;
+  border-radius: 60px;
+  min-width: 400px;
+  max-width: 400px;
+}
+.diag-frm h4 {
+  font-family: Poppins-Medium;
+  text-align: center;
+  font-size: 20px;
+  color: #000;
+  margin-bottom: 1rem;
+}
 
 @media screen and (min-width: 1600px) {
   .event-box {
@@ -2200,7 +2274,7 @@ a {
     font-size: 38px;
   }
   .hero-banner {
-    height: 250px;
+    min-height: 250px;
   }
   .sec_lifestyle .para,
   .sec_assitance .para,
@@ -2605,6 +2679,56 @@ a {
     line-height: 1.25;
     font-size: 16px;
   }
+  .diag-frm {
+    background: #fff;
+    padding: 40px;
+    border-radius: 40px;
+    min-width: 320px;
+    max-width: 320px;
+  }
 }
 @media screen and (max-width: 420px) {
+}
+/*** modal popup screen ***/
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+/* Modal Content */
+.modal-content {
+  background: transparent;
+  border: none;
+  width: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.st-card-img {
+  overflow: hidden;
 }
