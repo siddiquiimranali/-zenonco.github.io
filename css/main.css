@@ -1089,6 +1089,10 @@ a {
   background: #0194da;
   color: #fff;
 }
+.all-abt-blocks {
+  max-width: 1400px;
+  margin: 0 auto;
+}
 .all-abt-block {
   margin-bottom: 1rem;
 }
@@ -2044,9 +2048,9 @@ a {
   font-family: Poppins-Medium;
   font-size: 18px;
   width: 300px;
-  background: #0194da;
+  background: #fff;
   border: 2px solid #0194da;
-  color: #fff;
+  color: #0194da;
   padding: 16px 30px;
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
@@ -2066,6 +2070,10 @@ a {
   left: calc(50% - 20px);
 }
 */
+.sec_sec_opinion .btn-opinion.active {
+  background: #0194da;
+  color: #fff;
+}
 .sec_sec_opinion .btn-opinion.active:before {
   content: "";
   border-left: 10px solid transparent;
@@ -2084,7 +2092,12 @@ a {
   border-bottom-right-radius: 30px;
   background: #fff;
   color: #0076be;
-} /*
+}
+.sec_sec_opinion .btn-opinion.inverse.active {
+  background: #0194da;
+  color: #fff;
+}
+/*
 .sec_sec_opinion .btn-opinion.inverse:before {
   border: none;
 }
