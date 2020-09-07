@@ -1798,6 +1798,13 @@ a {
   padding: 16px;
   color: #0194da;
   position: relative;
+  transition: all 500ms ease;
+}
+.multi-board-card .multi-links:hover {
+  background: #0194da;
+  color: #fff;
+}
+.multi-board-card .multi-links:hover:after {
 }
 .multi-board-card .multi-links:after {
   content: url("../images/icons/arrow-blue.png");
@@ -1805,10 +1812,15 @@ a {
   right: 25px;
   padding-top: 2px;
 }
+.multi-board-card .multi-links:hover:after {
+  content: url("../images/icons/arrow-blue-inverse.png");
+}
 .multi-board-card .multi-links.download:after {
   content: url("../images/icons/download.png");
 }
-
+.multi-board-card .multi-links.download:hover:after {
+  content: url("../images/icons/download-inverse.png");
+}
 .sec_rep_fil {
   background: #002a3e;
 }
