@@ -1970,8 +1970,16 @@ a {
   padding: 15px !important;
   align-self: center;
 }
+/*
 .home-box img {
   margin-bottom: 1rem;
+}
+*/
+.home-box img {
+  margin-bottom: 1rem;
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
 }
 .home-box h4 {
   font-family: Poppins-Bold;
@@ -2524,6 +2532,7 @@ a {
   max-width: 380px;
   margin: 0 auto;
 }
+
 @media screen and (min-width: 1600px) {
   .event-box {
     -ms-flex: 0 0 25%;
@@ -2544,9 +2553,11 @@ a {
   .home-frm-wrapper {
     margin-left: 0%;
   }
+
   .home-box {
     display: none;
   }
+
   .sec_stories,
   .storires-cards,
   .sec_events {
