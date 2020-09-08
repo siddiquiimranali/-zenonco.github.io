@@ -993,12 +993,20 @@ a {
   background: #fff;
   overflow: hidden;
 }
+.sec_lifestyle .card-lifestyle .card-lifestyle-image {
+  overflow: hidden;
+}
+
 .card-lifestyle img {
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
   width: 100%;
   min-height: 200px;
   object-fit: cover;
+  transition: all 500ms ease;
+}
+.sec_lifestyle .slider-card:hover .card-lifestyle img {
+  transform: scale(1.1);
 }
 .card-lifestyle .card-lifestyle-info {
   padding: 2rem;
@@ -1394,9 +1402,15 @@ a {
   color: #777777;
   margin-bottom: 1.25rem;
 }
+.slider-card-img {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  overflow: hidden;
+}
 .slider-card-img img {
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
+  transition: all 500ms ease;
 }
 .card-wrapper {
   border-top-right-radius: 10px;
@@ -1405,6 +1419,9 @@ a {
 }
 .slider-card:hover .card-wrapper {
   box-shadow: 0px 5px 38px 0px rgba(0, 0, 0, 0.15);
+}
+.slider-card:hover .slider-card-img img {
+  transform: scale(1.1);
 }
 .sec_survivor_stories .slider-card-body-info {
   min-height: 120px;
@@ -1476,6 +1493,9 @@ a {
 .sec_blogs_stories .btn_common:hover {
   background: #44b388;
   border-color: #44b388;
+}
+.sec_blogs_stories .slider-card:hover .card-wrapper {
+  box-shadow: none;
 }
 .sec_reviews {
   background: #fff;
