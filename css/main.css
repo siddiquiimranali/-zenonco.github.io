@@ -1341,6 +1341,19 @@ a {
 .owl-dots {
   display: none;
 }
+.owl-carousel .owl-nav button.owl-prev img {
+  vertical-align: top;
+  width: 20px;
+  margin-top: 8px;
+  margin-left: -5px;
+}
+.owl-carousel .owl-nav button.owl-next img {
+  vertical-align: top;
+  width: 20px;
+  margin-top: 8px;
+  margin-right: -5px;
+}
+
 /* END*/
 .storiesCarousel {
   color: #222222;
@@ -1615,7 +1628,8 @@ a {
   margin-top: 1rem;
 }
 .sec_diag_test .btn_common_inverse:hover {
-  border-color: #fff;
+  background: #00adff;
+  color: #fff;
 }
 .card-diag-test .test-link {
   display: grid;
@@ -1801,11 +1815,10 @@ a {
   transition: all 500ms ease;
 }
 .multi-board-card .multi-links:hover {
-  background: #0194da;
+  background: #00adff;
   color: #fff;
 }
-.multi-board-card .multi-links:hover:after {
-}
+
 .multi-board-card .multi-links:after {
   content: url("../images/icons/arrow-blue.png");
   position: absolute;
@@ -1980,6 +1993,14 @@ a {
   width: 100px;
   height: 100px;
   object-fit: contain;
+}
+.home-box h3:first-child {
+  margin-top: 5rem;
+}
+.home-box h3 {
+  font-family: Poppins-Medium;
+  font-size: 34px;
+  line-height: 1;
 }
 .home-box h4 {
   font-family: Poppins-Bold;
