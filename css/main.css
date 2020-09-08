@@ -2000,7 +2000,6 @@ a {
 
 .home-box {
   text-align: center;
-  padding: 15px !important;
   align-self: center;
 }
 /*
@@ -2014,9 +2013,7 @@ a {
   height: 100px;
   object-fit: contain;
 }
-.home-box h3:first-child {
-  margin-top: 5rem;
-}
+
 .home-box h3 {
   font-family: Poppins-Medium;
   font-size: 34px;
@@ -2414,6 +2411,7 @@ a {
   padding: 15px 30px;
   border-radius: 30px;
   margin-right: 1rem;
+  width: 60%;
 }
 .frm-subs input::-webkit-input-placeholder,
 .frm-subs input::placeholder {
@@ -2572,6 +2570,7 @@ a {
   width: 100%;
   max-width: 380px;
   margin: 0 auto;
+  border-radius: 60px;
 }
 
 @media screen and (min-width: 1600px) {
@@ -2579,6 +2578,12 @@ a {
     -ms-flex: 0 0 25%;
     flex: 0 0 25%;
     max-width: 25%;
+  }
+  .owl-carousel .owl-nav button.owl-prev {
+    left: -150px;
+  }
+  .owl-carousel .owl-nav button.owl-next {
+    right: -150px;
   }
 }
 @media screen and (max-width: 1600px) {
@@ -2612,6 +2617,7 @@ a {
   .sec_talk_warriors h2 {
     font-size: 48px;
     margin-bottom: 1rem;
+    line-height: 1;
   }
   .sec_talk_warriors p {
     font-size: 16px;
@@ -2823,6 +2829,10 @@ a {
   }
   .sec_talk_warriors .joincommunity {
     margin-left: 0%;
+    padding-left: 20px;
+  }
+  .sec_talk_warriors h2 {
+    font-size: 40px;
   }
   .all-abt-block select {
     padding: 10px 20px;
@@ -2846,6 +2856,13 @@ a {
   }
   .sec_assitance .assist-blocks {
     border-right: none;
+  }
+  .sec_footer_buttons .btn_common {
+    padding: 10px 12px;
+    font-size: 16px;
+  }
+  .sec_footer_buttons .btn_common img {
+    width: 20px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -2989,6 +3006,13 @@ a {
     margin-top: 1rem;
     float: none;
   }
+  .sec_footer_buttons .row {
+    justify-content: center;
+  }
+  .sec_footer_buttons .btn_common {
+    margin-bottom: 10px;
+    max-width: 250px;
+  }
 }
 @media screen and (max-width: 539px) {
   .sec_home_banner .frm-home {
@@ -3074,6 +3098,10 @@ a {
   .tab_careathome .nav-tabs .nav-link {
     font-size: 16px;
     padding: 5px;
+  }
+  .sec_talk_warriors,
+  .sec_talk_warriors .parallax {
+    height: 500px;
   }
 }
 @media screen and (max-width: 420px) {
