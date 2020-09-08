@@ -81,7 +81,59 @@
             </nav>
         </div>
       </header>
-
+      <section class="sec_home_banner">
+        <div class="homewrapper">
+            <div class="home-frm-wrapper">        
+                <div class="row">
+                    <div class="col-lg-6 home-box wow fadeInDown">    
+                        <div class="owl-carousel owl-theme bannerCarousel">
+                            <div class="item">
+                                <img src="images/icons/home-1.png" alt="">
+                                <h4>World's 1st </h4>
+                                <p>Integrative Oncology </p>
+                                <p>healthtech platform</p>
+                            </div>
+                            <div class="item">
+                                <img src="images/icons/home-1.png" alt="">
+                                <h4>World's 2nd </h4>
+                                <p>Integrative Oncology </p>
+                                <p>healthtech platform</p>
+                            </div>
+                            <div class="item">
+                                <img src="images/icons/home-1.png" alt="">
+                                <h4>World's 3rd </h4>
+                                <p>Integrative Oncology </p>
+                                <p>healthtech platform</p>
+                            </div>
+                            <div class="item">
+                                <img src="images/icons/home-1.png" alt="">
+                                <h4>World's 4th </h4>
+                                <p>Integrative Oncology </p>
+                                <p>healthtech platform</p>
+                            </div>
+                        </div>
+                    </div>                
+                    <div class="col-lg-6 ml-auto">
+                        <div class="frm-home wow fadeInRight">
+                            <h4>Receive detailed guidance 
+                                on cancer treatment</h4>
+                            <input type="text" placeholder="Name">
+                            <input type="text" placeholder="City Name"> 
+                            <input type="text" placeholder="Phone No.">  
+                            <input type="text" placeholder="Email ID"> 
+                            <p class="tandc">
+                                <input type="checkbox"> I accept to Terms & Conditions and <a href="#">Privacy Policy</a> of <a href="#">ZenOnco.io</a>
+                            </p>
+                            <button class="btn_common">Get free guidance</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+        
+      
+        
     <!-- landing section -->
     <section class="sec_home_banner">
         <div class="homewrapper">
@@ -1308,7 +1360,7 @@
       nav: true,
       rewind:true,
       dots: true,
-      autoplay:false,
+      autoplay:true,
       responsive: {
         0: {
           items: 1,
@@ -1455,7 +1507,7 @@
       nav: true,
       rewind:true,
       dots: true,
-      autoplay:false,
+      autoplay:true,
       responsive: {
         0: {
           items: 1,
@@ -1512,7 +1564,33 @@
     */
   </script>
 
-
+<script>
+    $(".bannerCarousel").owlCarousel({
+      loop: true,
+      margin:5,
+      nav: false,
+      rewind:true,
+      dots: false,
+      autoplay:true,
+      responsive: {
+        0: {
+          items: 1,
+        },
+        640: {
+          items:1,
+        },
+        991:{
+          items:1,
+        },
+        1600:{
+          items: 1,  
+        },
+        1900: {
+          items: 1,
+        }
+      },
+    });
+  </script>
 
   </body>
 </html>
