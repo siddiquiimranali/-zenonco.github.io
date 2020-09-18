@@ -287,6 +287,7 @@ a {
 }
 .dropdown-item.has-menu {
   margin-right: 20px;
+  position: relative;
 }
 
 .upper-nav {
@@ -535,7 +536,7 @@ a {
   text-align: left;
 }
 .dr-profile {
-  align-self: center;
+  /*align-self: center; */ /* to make it stay on top*/
   max-width: 225px;
   padding-right: 0px;
   padding-left: 0px;
@@ -565,15 +566,15 @@ a {
   font-size: 20px;
   margin-bottom: 5px;
   color: #333;
-  letter-spacing: 0px;
+  letter-spacing: 0.05em;
 }
 .dr-info h5 {
   font-family: Poppins-SemiBold;
   font-size: 16px;
-  margin-bottom: 1rem;
+  margin-bottom: 10px;
   color: #1fb995;
   text-transform: uppercase;
-  letter-spacing: 0px;
+  letter-spacing: 0.05em;
 }
 .dr-info p {
   font-family: Poppins-Regular;
@@ -581,6 +582,9 @@ a {
   color: #666666;
   font-size: 15px;
   font-weight: 400;
+}
+.dr-info p:last-of-type {
+  margin-bottom: 0px;
 }
 .dr-info .dr-exp {
   display: none;
@@ -623,6 +627,12 @@ a {
   border: 2px solid var(--secondary-clr);
   font-size: 15px;
   height: 45px;
+  transition: all 500ms ease;
+}
+.dr-booking button:hover {
+  border-color: #0194da;
+  background: #0194da;
+  color: #fff;
 }
 .dr-booking button:last-child {
   margin-right: 0px;
@@ -630,6 +640,10 @@ a {
 .dr-booking button.inverse {
   color: #fff;
   background: var(--secondary-clr);
+}
+.dr-booking button.inverse:hover {
+  color: #fff;
+  background: #018acc;
 }
 
 .btn-nav {
@@ -1603,9 +1617,11 @@ a {
   border: 2px solid #1fb995;
   color: #fff;
 }
+
 .slider-btn-invers:hover {
-  background: #fff;
-  color: #1fb995;
+  color: #fff;
+  background: #44b388;
+  border-color: #44b388;
 }
 */
 .sec_blogs_stories .title {
@@ -2412,7 +2428,7 @@ a {
   color: #000;
 }
 .sec_events .class-tag {
-  background: #3882db;
+  background: #0194da;
   border-radius: 40px;
   max-width: 280px;
 }
@@ -2463,6 +2479,11 @@ a {
   color: #fff;
 }
 
+.event-card-wrapper .slider-btn-invers:hover {
+  color: #fff;
+  background: #44b388;
+  border-color: #44b388;
+}
 .event-card-wrapper .slider-title {
   margin-bottom: 5px;
   font-size: 22px;
@@ -2882,6 +2903,9 @@ a {
   }
 }
 @media screen and (max-width: 1280px) {
+  .dr-info p {
+    margin-bottom: 5px;
+  }
   .sec_doc h2,
   .sec_stories h2 {
     font-size: 28px;
@@ -3250,6 +3274,15 @@ a {
   .frm-oncologist button {
     width: 80%;
   }
+  .mob-stories.sec_stories .filter-box {
+    flex-direction: column;
+  }
+  .mob-stories.sec_stories .filter-stories {
+    margin-top: 10px;
+  }
+  .mob-stories.sec_stories h2 {
+    align-self: flex-start;
+  }
   .sec_doc h2,
   .sec_stories h2 {
     font-size: 24px;
@@ -3575,3 +3608,166 @@ a {
   border: none;
 }
 */
+
+/*the container must be positioned relative:*/
+.customselect {
+  position: relative;
+  font-family: Poppins-Regular;
+  font-size: 14px;
+  text-align: left;
+}
+
+.customselect select {
+  display: none; /*hide original SELECT element:*/
+}
+
+.select-selected {
+  background-color: #003751;
+  border-radius: 30px;
+  background-image: url("../images/icons/arrow-white.png");
+  background-position: right 25px center;
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+  padding: 15px 15px !important;
+}
+/*
+/*style the arrow inside the select element:*/
+
+/*
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+*/
+/*point the arrow upwards when the select box is open (active):*/
+/* 
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+*/
+
+/*style the items (options), including the selected item:*/
+.select-items div,
+.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  user-select: none;
+}
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: #0e4762;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+/*** contact us form ***/
+.sec_map {
+  background: #fff;
+}
+.sec_contact {
+  background: #0194da;
+}
+
+.sec_contact .main-contact {
+  width: 70%;
+  margin: 0 auto;
+  display: block;
+  margin-top: -150px;
+  position: relative;
+}
+
+.main-contact .contact-details {
+  padding: 40px 80px;
+  background: #fff;
+  text-align: center;
+  border-radius: 60px;
+}
+.contact-details .title-name {
+  font-family: Poppins-Medium;
+  color: #333;
+}
+.contact-details .title-add {
+  font-family: Poppins-Medium;
+  color: #333;
+}
+.contact-details .add-box {
+  padding: 40px;
+  padding-bottom: 0;
+}
+
+.main-contact .fld-cont {
+  border-radius: 30px;
+  padding: 12px 15px;
+  background: rgba(0, 0, 0, 0.1);
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  color: #fff;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+.main-contact .fld-cont::placeholder,
+.main-contact .fld-cont-textarea::placeholder {
+  opacity: 1;
+}
+
+.main-contact .fld-cont-textarea {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  border: none;
+  color: #fff;
+  padding: 12px 15px;
+  margin-bottom: 1rem;
+}
+
+.main-contact .cont-btn {
+  font-family: Poppins-Medium;
+  width: 100%;
+  border-radius: 30px;
+  padding: 12px 15px;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  color: #0194da;
+  font-size: 18px;
+}
+.main-contact .frm-cont-title {
+  font-family: Poppins-Medium;
+  text-align: center;
+  color: #fff;
+}
+.main-contact .frm-cont-subtitle {
+  color: #fff;
+  text-align: center;
+}
+
+.add-box a {
+  font-family: Poppins-Medium;
+  color: #333;
+  font-size: 20px;
+}
