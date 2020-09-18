@@ -2659,6 +2659,10 @@ a {
 .sec_inner_events .card-lifestyle .b-card {
   min-height: 200px !important;
 }
+.sec_inner_events .card-diag-test-last {
+  padding: 20px;
+  background: #0194da;
+}
 .diag-frm {
   background: #fff;
   padding: 60px;
@@ -3106,6 +3110,9 @@ a {
   }
   .sec_footer_buttons .btn_common img {
     width: 20px;
+  }
+  .sec_inner_events .card-diag-test-last {
+    padding-bottom: 0px;
   }
 }
 @media screen and (max-width: 767px) {
