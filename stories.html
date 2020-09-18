@@ -221,7 +221,7 @@
           </nav>
       </div>
     </header>
-    <section class="sec_stories">
+    <section class="mob-stories sec_stories">
       <div class="position-relative">
         <div class="filter-box">
           <h2>cancer healing stories</h2>
@@ -705,5 +705,35 @@
         this.parentNode.insertBefore(section, this);
       };
     </script>
+    <script>
+      /*
+      $('.dropdown').on('show.bs.dropdown', function(e){
+          $(this).find('.dropdown-menu').first().stop(true, true).slideDown(300);
+      });
+  
+      $('.dropdown').on('hide.bs.dropdown', function(e){
+          $(this).find('.dropdown-menu').first().stop(true, true).slideUp(200);
+      });
+      */
+      // Prevent closing from click inside dropdown
+      $(document).on("click", ".dropdown-menu", function (e) {
+          e.stopPropagation();
+      });
+  
+      // make it as accordion for smaller screens
+      if ($(window).width() < 992) {
+          $(".dropdown-menu a.has-menu").click(function (e) {
+          e.preventDefault();
+          $(".submenu").slideUp();
+          if (!$(this).next(".submenu").is(':visible')) {
+              $(this).next(".submenu").slideDown();
+          }
+  
+          $(".dropdown").on("hide.bs.dropdown", function () {
+              $(this).find(".submenu").hide();
+          });
+          });
+      }
+      </script>
   </body>
 </html>
